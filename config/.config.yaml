@@ -1,0 +1,19 @@
+general:
+  tz       : true
+  periodic : 1s
+
+broker:
+  host     : tcp://localhost:1883
+  user     : 
+  pass     : 
+  qos      : 1
+  topic    : mqtt_rust/#
+  reconnect: 10s
+  retries  : 5
+
+rabbit:
+  host     : amqp://guest:guest@localhost:5672/%2f
+  tag      : rust-rabbit"
+  que      : rust_test
+  reconnect: 10s
+  retries  : 5

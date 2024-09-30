@@ -1,0 +1,16 @@
+[package]
+name = "rust_producer-consumer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+paho-mqtt = { git = "https://github.com/eclipse/paho.mqtt.rust.git", branch = "master" }
+lapin = "2.0" 
+chrono = "0.4.38"
+peak_alloc = "0.2.0"
+serde = { version = "1.0", features = ["derive"] }
+humantime-serde = "1.0"
+serde_yaml = "0.9"
+serde_json = "1.0"
+futures = "0.3"
+tokio = { version = "1", features = ["full"] }
