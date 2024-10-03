@@ -11,7 +11,7 @@ use crate::pkg::utils::log;
 async fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() <= 1 {
-        log::logger("ftal", "main", "argument not found");
+        log::logger("fatal", "main", "argument not found");
     }
     log::logger("info", "main", " ============================ [START] ============================");
 
